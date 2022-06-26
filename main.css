@@ -1,3 +1,20 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 5px;
+
+}
+:root{
+    --background-color: #FFEFD6;
+    --primary-color: #B8000C;
+    --accent1-color: #2C7209;
+    --accent2-color: #022078;
+    --accent3-color: #AD349D;
+    --accent4-color: #FF810A;
+    --font-weight-light: 300;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,20 +23,78 @@ body {
 }
 nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    justify-items: normal;
-    text-align: right;
-    position: relative;
-    padding: 10px;
+    align-items: center;
+    flex-direction: row;
 }
 a{
-    color: #B8000C;
+    color: var(--primary-color);
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 50px, 0px, 0px, 0px;
-
 }
 .active, a:hover{
     color: #FF810A;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.flex-left{
+    width: 50%;
+    height: 100vh;
+    margin: 5px;
+    padding: 5px;
+}
+.flex-right{
+    width: 50%;
+    margin: 5px;
+    padding: 5px;
+}
+hr{
+    background: var(--accent4-color);
+    height: 3px;
+    border: none;
+}
+.header-line{
+    background: var(--accent2-color);
+    height: 3px;
+    border: none;
+}
+h1{
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 60px;
+    letter-spacing: 0;
+}
+h2{
+    color: var(--accent1-color);
+    font-size: 30px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 40px;
+    letter-spacing: 0;
+}
+.dish-name{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: var(--font-weight-medium);
+    /*line-height: 30px;*/
+    letter-spacing: 0;
+}
+.price{
+    color: var(--accent2-color);
+    font-size: 20px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 30px;
+    
+
+}
+p{
+    color: var(--accent3-color);
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    line-height: 25px;
+}
+
+.menu-item{
+    justify-content: center;
 }
