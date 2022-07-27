@@ -18,7 +18,21 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #FFEFD6;
+    background-color: var(--background-color);
+}
+.header{
+    background-color: var(--background-color);
+}
+.scrolling-content{
+    padding: 16px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content{
+    padding-top: 120px;
 }
 nav{
     display: flex;
@@ -26,12 +40,16 @@ nav{
     align-items: center;
     flex-direction: row;
 }
+/* want to add underline animation when mouse hovers, & click */
 a{
-    color: var(--primary-color);
+    text-decoration: none;
+    color: #B8000C;
     font-size: 25px;
+    position: relative;
 }
-.active, a:hover{
-    color: #FF810A;
+a:hover{
+    text-decoration: underline;
+    color: var(--accent4-color);
 }
 .flex-container{
     display: flex;
@@ -72,7 +90,7 @@ h2{
     line-height: 40px;
     letter-spacing: 0;
 }
-.dish-name{
+h3{
     color: var(--primary-color);
     font-size: 20px;
     font-weight: var(--font-weight-medium);
@@ -84,8 +102,6 @@ h2{
     font-size: 20px;
     font-weight: var(--font-weight-semibold);
     line-height: 30px;
-    
-
 }
 p{
     color: var(--accent2-color);
@@ -94,6 +110,49 @@ p{
     line-height: 25px;
 }
 
-.menu-item{
-    justify-content: center;
+.accordion .label {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    
+  }
+.accordion .container {
+    position: relative;
+    margin: 10px 10px;
 }
+.label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(0%);
+}
+.accordion .content {
+    position: relative;
+    background: transparent;
+    height: 0;
+    text-align: justify;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+.container.active .content{
+    height: 100%;
+}
+
+.container.active .label::before{
+    content: '-';
+}
+img {
+    position: relative; 
+    justify-content: center;
+    
+}
+/*consider using https://fonts.google.com/ */
+
+
+

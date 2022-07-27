@@ -8,7 +8,7 @@
 
     <main>
         <body>
-            <header id = "header" class = "sticky">
+            <header id = "header" class = "myheader">
                 <nav>
                     <a href = "home.html">Home</a>
                     <a href = "menu.html">Menu</a>
@@ -17,178 +17,140 @@
                     <a href = "our_story.html">Our Story</a>
                 </nav>
             </header>
-            <div class = "menu">
-                <h1>Menu</h1><hr class = "header-line" >
-                <div class = "flex-container">
-                    <div class = "flex-left">
-                        <h2>Appetizers</h2><hr>
-                        <div class = "menu-item">
-                            <h3 class= "dish-name">Falafel (6 pieces) <span class = "price">$8.00</span></h3>
+            <!--menu-->
+            <div class = "accordion-body">
+            <div class = "accordion">
+                <h1>Menu</h1><hr>
+                <img src = "image1.webp">
+                        <!--appetizers-->
+                    <div class = "container">
+                        <button class = "label"><h2>Appetizers</h2></button>
+                        <hr>
+                        <div class = "content">
+                            <h3>Falafel (6 pieces) <span class = "price">$8.00</span></h3>
                             <p>The best around! Made from ground chickpeas, garlic, vegetables with our traditional organic spices and fried in pure vegetable oil. Served with hummus, our special tahini sauce, and Pita bread.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class= "dish-name">Grape Leaves (6 pieces)<span class = "price">$4.50</span></h3>
+                            <h3>Grape Leaves (6 pieces)<span class = "price">$4.50</span></h3>
                             <p>Stuffed with rice, diced parsley, and onions, cooked in olive oil, and served with yogurt cucumber sauce and our organic spices.</p>  
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Hummus (8oz)<span class = "price">$4.50</span>(16oz)<span class = "price">$5.50</span></h3>
+                            <h3>Hummus (8oz)<span class = "price">$4.50</span>(16oz)<span class = "price">$5.50</span></h3>
                             <p>No dairy products. Unique blend of chickpeas, Tahini, lemon juice, salt, and fresh garlic. Served with Pita chips.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Tzatziki (8oz)<span class = "price">$5.00</span>(16 oz)<span class = "price">$6.00</span></h3>
+                            <h3>Tzatziki (8oz)<span class = "price">$5.00</span>(16 oz)<span class = "price">$6.00</span></h3>
                             <p>A blend of yogurt, sour cream, cucumber, fresh garlic, dried mint, and dill. Served with Pita chips.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Jedra<span class = "price">$6.00</span></h3>
-                            <p>Rice and lentils served with sautéed onions in olive oil.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Pita chips with Hummus<span class = "price">$5.00</span></h3>
+                            <h3>Jedra<span class = "price">$6.00</span></h3>
+                            <p>Rice and lentils served with sautéed onions in olive oil.</p>                                <h3>Pita chips with Hummus<span class = "price">$5.00</span></h3>
                             <p>Home made from sliced Syrian bread, lightly fried and topped with organic spices. Served with fresh hummus.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Labne<span class = "price">$5.00</span></h3>
+                            <h3>Labne<span class = "price">$5.00</span></h3>
                             <p>Plain yogurt with fresh or fried Pita bread.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Fattoush<span class = "price">$9.00</span></h3>
+                            <h3>Fattoush<span class = "price">$9.00</span></h3>
                             <p>Fresh and organic lettuce, tomato, cucumber, onion and olive oil with pita chips.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Spinach Pie<span class = "price">$5.00</span></h3>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Pickled Eggplant (4 pieces)<span class = "price">$6.00</span></h3>
+                            <h3>Spinach Pie<span class = "price">$5.00</span></h3>
+                            <h3>Pickled Eggplant (4 pieces)<span class = "price">$6.00</span></h3>
                             <p>Eggplant pickled in olive oil, served with bread (contains walnuts)</p>
+                            <h3>Pita chips with Tzatziki<span class = "price">$6.50</span></h3>
+                            <h3>Pita chips with Babaganush<span class = "price">$6.50</span></h3>
+                            <h3>French fries<span class = "price">$4.00</span></h3>
+                            <h3>Curly fries<span class = "price">$4.50</span></h3>
+                            <h3>Extra side of dressing (2oz)<span class = "price">$0.50</span></h3>
+                            <p>Hot sauce, Hummus, Tahini, Cucumber sauce, Blue Cheese, Italian, Ranch, Balsamic, Greek</p>                            
                         </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Pita chips with Tzatziki<span class = "price">$6.50</span></h3>
+                    </div> 
+                    <div class = "container">   
+                        <!--pocket wraps-->
+                        <button class = "label"><h2>Pocket Wraps</h2></button>
+                        <hr>
+                        <div class = "content">
+                            <p>All our pockets are served with your choice of the following toppings: Hot Sauce, Hummus, Lettuce, Tomato, Onions, Hot Peppers, Pickles, Tahini, Yogurt Cucumber Sauce, Feta Cheese, Green Peppers, Black Olives, Cucumbers, Tzatziki, garlic paste.</p>
+                            <h3 class = "price">Try the traditional way or choose your own!</h3>
+                            <h3>Falafel Pocket<span class = "price">$8.00</span></h3>
+                            <h3>Greek Veggie Pocket (with feta cheese)<span class = "price">$8.00</span></h3>
+                            <h3>Hummus Pocket<span class = "price">$7.00</span></h3>
+                            <h3>Grape Leave Pocket<span class = "price">$8.00</span></h3>
+                            <h3 class = "dish-name">Zatar<span class = "price">$3.50 </span></h3>
+                            <h3 class = "price">$0.50 per additional topping</h3>                                <p>Dough, dry thyme, sesame seeds, olive oil</p>
                         </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Pita chips with Babaganush<span class = "price">$6.50</span></h3>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">French fries<span class = "price">$4.00</span></h3>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Curly fries<span class = "price">$4.50</span></h3>
-                        </div>
-                        <div class = "menu-item">
-                            <h3 class = "dish-name">Extra side of dressing (2oz)<span class = "price">$0.50</span></h3>
-                            <p>Hot sauce, Hummus, Tahini, Cucumber sauce, Blue Cheese, Italian, Ranch, Balsamic, Greek</p>
-                        </div> 
-                        <h2>Pocket Wraps</h2><hr>
-                        <p>All our pockets are served with your choice of the following toppings: Hot Sauce, Hummus, Lettuce, Tomato, Onions, Hot Peppers, Pickles, Tahini, Yogurt Cucumber Sauce, Feta Cheese, Green Peppers, Black Olives, Cucumbers, Tzatziki, garlic paste.</p>
-                        <h3 class = "price">Try the traditional way or choose your own!</h3>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Falafel Pocket<span class = "price">$8.00</span></h2>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Greek Veggie Pocket (with feta cheese)<span class = "price">$8.00</span></h2>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Hummus Pocket<span class = "price">$7.00</span></h2>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Grape Leave Pocket<span class = "price">$8.00</span></h2>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Zatar<span class = "price">$3.50 </span></h2>
-                            <h2 class = "price">$0.50 per additional topping</h2>
-                            <p>Dough, dry thyme, sesame seeds, olive oil</p>
-                        </div>
-                        <h2>From the Grill</h2><hr>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Chicken Kabob Pocket<span class = "price">$9.00</span></h2>
+                        <!--from the grill-->
+                    </div>
+                    <div class = "container">
+                        <button class = "label"><h2>From the Grill</h2></button>
+                        <hr>
+                        <div class = "content">
+                            <h3>Chicken Kabob Pocket<span class = "price">$9.00</span></h3>
                             <p>Grilled chicken tenders marinated in olive oil, lemon juice, fresh garlic, oregano, and organic spices.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Shawarma Pocket<span class = "price">$9.50</span></h2>
+                            <h3>Shawarma Pocket<span class = "price">$9.50</span></h3>
                             <p>Beef & Lamb seasoned and roasted on a vertical broiler</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Combo Pocket<span class = "price">$11.00</span></h2>
+                            <h3>Combo Pocket<span class = "price">$11.00</span></h3>
                             <p>Combine any two of the following pockets into one! Falafel, chicken or shawarma.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Buffalo Chicken Wrap<span class = "price">$9.00</span></h2>
+                            <h3>Buffalo Chicken Wrap<span class = "price">$9.00</span></h3>
                             <p>Fresh romaine lettuce, tomatoes, onion, and blue cheese dressing. Feta cheese optional.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Turbo Pocket<span class = "price">$12.00</span></h2>
+                            <h3>Turbo Pocket<span class = "price">$12.00</span></h3>
                             <p>The ultimate pocket: chicken, falafel, and shawarma. All in one!</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Chicken Casesar Pocket<span class = "price">$9.00</span></h2>
+                            <h3>Chicken Casesar Pocket<span class = "price">$9.00</span></h3>
                             <p>Feta chese, tomatoes, cucumbers, fresh romaine lettuce, and casesar dressing</p>
+                            <h3>Cauliflower Pocket<span class = "price">$9.00</span></h3>        
                         </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Cauliflower Pocket<span class = "price">$9.00</span></h2>
-                        </div>
-                    </div>  
-                    <div class = "flex-right">
-                        <h2>Plate Dinners <span class = "price">(not served as a Pocket Wrap)</span></h2><hr>
-                        <h2 class = "dish-name">All plate dinners are served with a small garden salad with a choice of dresing and side of Jedra (rice and lentils) over Pita bread</h2>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Falafel Plate<span class = "price">$12.00</span></h2>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Chicken Kabob Plate<span class = "price">$12.00</span></h2>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Shawarma Plate<span class = "price">$12.50</span></h2>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Combo Plate<span class = "price">$13.50</span></h2>
+                    </div>
+                        <img src = "image5.webp">
+                        <!--plate dinners-->
+                    <div class = "container">
+                        <button class = "label"><h2>Plate Dinners <span class = "price">(not served as a Pocket Wrap)</span></h2></button>
+                        <hr>                        
+                        <div class = "content">
+                            <h3>All plate dinners are served with a small garden salad with a choice of dresing and side of Jedra (rice and lentils) over Pita bread</h2>
+                            <h3>Falafel Plate<span class = "price">$12.00</span></h3>
+                            <h3>Chicken Kabob Plate<span class = "price">$12.00</span></h3>
+                            <h3>Shawarma Plate<span class = "price">$12.50</span></h3>
+                            <h3>Combo Plate<span class = "price">$13.50</span></h3>
                             <p>Combine any two of the following: falafel, chicken, or shawarma.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Middle Eastern Platter<span class = "price">$13.50</span></h2>
+                            <h3>Middle Eastern Platter<span class = "price">$13.50</span></h3>
                             <p>Hummus, falafel, and grape leaves served over a bed of salad with Pita bread.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">The Ultimate Vegan Plate<span class = "price">$14.50</span></h2>
+                            <h3>The Ultimate Vegan Plate<span class = "price">$14.50</span></h3>
                             <p>Served with hummus and 3 grape leaves over a bed of salad with a side of jedra rice. Comes with babagannoush and 3 falafel.</p>
                         </div>
-                        <h2>Salads<hr><span class = "price">Choice of dressing: Italian, Greek, our house made Tahini sauce, Tzatziki sauce, Honey Mustard, Buffalo sauce and Blue Cheese.</span></h2>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Greek Salad<span class = "price">$10.00</span></h2>
+                    </div>
+                    <div class = "container">
+                            <!--salads-->
+                        <button class = "label"><h2>Salads</h2></button>
+                        <hr>
+                        <div class = "content">
+                            <span class = "price">Choice of dressing: Italian, Greek, our house made Tahini sauce, Tzatziki sauce, Honey Mustard, Buffalo sauce and Blue Cheese.</span>
+                            <h3>Greek Salad<span class = "price">$10.00</span></h3>
                             <p>Garden salad topped with feta cheese.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Chicken Salad<span class = "price">$10.00</span></h2>
+                            <h3>Chicken Salad<span class = "price">$10.00</span></h3>
                             <p>Fresh romaine lettuce, tomatoes, hot peppers, onions, pickles, cucumbers, and olives.</p>
-                        </div>
-                        <div class = "menu-item">
-                            <h2 class = "dish-name">Chicken Caesar Salad<span class = "price">$11.50</span></h2>
+                            <h3>Chicken Caesar Salad<span class = "price">$11.50</span></h3>
                             <p>Fresh romaine lettuce, tomatoes, hot peppers, onions, pickles, cucumbers and olives with caesar dressing.</p>
-                        </div>
-                        <div class = "falafel-salad">
-                            <h2 class = "dish-name">Falafel Salad<span class = "price">$11.50</span></h2>
+                            <h3>Falafel Salad<span class = "price">$11.50</span></h3>
                             <p>Includes 4 pieces of falafel.</p>
-                        </div>
-                        <div class = "combo-salad">
-                            <h2 class = "dish-name">Combo Salad<span class = "price">$13.50</span></h2>
+                            <h3>Combo Salad<span class = "price">$13.50</span></h3>
                             <p>Combine any two of the following: chicken, shawarma, or falafel. Mixed over greek salad.</p>
-                        </div>
-                        <div class = "grape-leaves-salad">
-                            <h2 class = "dish-name">Grape Leaves Salad<span class = "price">$11.50</span></h2>
-                        </div>
-                        <div class = "ultimate-vegan-salad">
-                            <h3 class = "dish-name">Ultimate Vegan Salad<span class = "price">$14.50</span></h3>
+                            <h3>Grape Leaves Salad<span class = "price">$11.50</span></h3>
+                            <h3>Ultimate Vegan Salad<span class = "price">$14.50</span></h3>
                             <p>Salad served with hummus, 3 grape leaves, pickled eggplant, and three falafel.</p>
                         </div>
-                        <h2>Soups</h2><hr>
-                        <h2 class = "price">Soup of the Day</h2>
-                        <h2>Desserts</h2><hr>
-                        <h2 class = "price">Try one of our delicious desserts!</h3>
-                        <h2 class = "dish-name">Finger<span class = "price">$0.80 each</span></h2>
-                        <h2 class = "dish-name">Burma<span class = "price">$2.50</span></h2>
-                        <h2 class = "dish-name">Baklava<span class = "price">$3.00</span></h2>
-                        <h2 class = "dish-name">Bird Nest<span class = "price">$2.00</span></h2>
                     </div>
-                </div>
+                        <!--soups-->
+                    <div class = "container">
+                        <button class = "label"><h2>Soups</h2></button>
+                        <hr>
+                        <div class = "content">
+                            <h2 class = "price">Soup of the Day</h2>
+                        </div>
+                    </div>
+                        <!--desserts-->
+                        <img src = "image7.webp">
+                    <div class = "container">
+                        <button class = "label"><h2>Desserts</h2></button>
+                        <hr>
+                        <div class ="content">
+                        <h2 class = "price">Try one of our delicious desserts!</h2>
+                        <h3>Finger<span class = "price">$0.80 each</span></h3>
+                        <h3>Burma<span class = "price">$2.50</span></h2>
+                        <h3>Baklava<span class = "price">$3.00</span></h3>
+                        <h3>Bird Nest<span class = "price">$2.00</span></h3>
+                        </div>
+                    </div>
             </div>
+            </div>
+            <script src = "main.js"></script>
         </body>
     </main>
 
